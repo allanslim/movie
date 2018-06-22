@@ -19,6 +19,13 @@ mvn clean install
 mvn spring-boot:run
 ```
 
+To run the Docker container
+
+```
+mvn clean install dockerfile:build
+docker run -p 8080:8080 -t springio/gs-spring-boot-docker
+```
+
 To Create a Movie:
 
 ```
